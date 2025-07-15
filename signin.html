@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Workbit</title>
+    <link rel = "stylesheet" href = "global.css"></link>
+    <link rel = "stylesheet" href = "header.css"></link>
+    <link rel = "stylesheet" href = "signin.css"></link>
+</head>
+<body>
+    <div id = "header">
+        <a href = "index.html" id = "headerNameContainer">
+            <div id = "headerLogo">💼</div>
+            <div id = "headerName">Workbit</div>
+        </a>
+        <div id = "headerButtonContainer">
+            <a href = "signin.html" id = "headerSignIn">Sign In</a>
+            <a href = "createaccount.html" id = "headerCreateAccount">Create Account</a>
+        </div>
+    </div>
+    <div id = "signinContainer">
+        <div id = "signinSection">
+            <div id = "signinLabel">🔒 Sign In</div>
+            <div class = "signinInputContainer">
+                <div class = "signinInputLabel">Username</div>
+                <input type = "text" class = "signinInputBox" id = "signinUsername">
+            </div>
+            <div class = "signinInputContainer">
+                <div class = "signinInputLabel">Password</div>
+                <input type = "password" class = "signinInputBox" id = "signinPassword">
+            </div>
+            <div id = "signinError" style = "display:none"></div>
+            <button id = "signinButton">Sign In</button>
+        </div>
+    </div>
+    
+    <script src = "signin.js" type = "module"></script>
+</body>
+</html>

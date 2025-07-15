@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Workbit</title>
+    <link rel = "stylesheet" href = "global.css"></link>
+    <link rel = "stylesheet" href = "header.css"></link>
+    <link rel = "stylesheet" href = "dashboard.css"></link>
+</head>
+<body>
+    <div id = "header">
+        <a href = "index.html" id = "headerNameContainer">
+            <div id = "headerLogo">💼</div>
+            <div id = "headerName">Workbit</div>
+        </a>
+        <div id = "headerButtonContainer">
+            <div id = "headerWelcome"></div>
+            <button id = "headerSignOut">Sign Out</button>
+        </div>
+    </div>
+    <div id = "newAppPopup" style = "display:none">
+        <div class = "filter"></div>
+        <div id = "newAppSection" style = "transform:scale(0)">
+            <div id = "newAppHeader">
+                <div id = "newAppTitle"></div>
+                <div id = "newAppButtonsContainer">
+                    <button id = "newAppSaveButton">Save</button>
+                    <button id = "newAppDeleteButton">Delete</button>
+                    <button id = "newAppCancelButton">Cancel</button>
+                </div>
+            </div>
+            <div id = "newAppInputs">
+                <div class = "newAppInput">
+                    <div class = "newAppInputLabel">Company</div>
+                    <input class = "newAppInputBox" id = "newAppCompany" autocomplete="off"></input>
+                </div>
+                <div class = "newAppInput">
+                    <div class = "newAppInputLabel">Date</div>
+                    <input class = "newAppInputBox" id = "newAppDate" autocomplete="off"></input>
+                </div>
+                <div class = "newAppInput">
+                    <div class = "newAppInputLabel">Decision</div>
+                    <input class = "newAppInputBox" id = "newAppDecision" autocomplete="off"></input>
+                </div>
+            </div>
+            <div id = "newAppStages">
+                <button id = "newAppNewStage">Add New Stage</button>
+            </div>
+        </div>
+    </div>
+    <div id = "appDetailsPopup" style = "display:none">
+        <div class = "filter" onClick = "closeAppDetails()"></div>
+        <div id = "appDetailsSection" style = "transform:scale(0);">
+            <div id = "appDetailsHeader">
+                <div id = "appDetailsHeaderContainer">
+                    <div id = "appDetailsCompany"></div>
+                    <div id = "appDetailsDate"></div>
+                </div>
+                <div id = "appDetailsButtonContainer">
+                    <button id = "appDetailsEdit">Edit</button>
+                    <button id = "appDetailsClose">Close</button>
+                </div>
+                
+            </div>
+            <div id = "appDetailsStages"></div>
+            <div id = "appDetailsDecisionContainer">
+                <div id = "appDetailsDecision"></div>
+            </div> 
+        </div>
+    </div>
+    <div id = "dashboardContainer">
+        <div id = "appsSection">
+            <div id = "newAppButtonContainer">
+                <div class = "sectionLabel">📄 Your Applications</div>
+                <button id = "newAppButton">Add New Application</button>
+            </div>
+            <div id = "appControlContainer">
+                <input type = "text" id = "appsSearch" placeholder = "Search...">
+                <select id="appsSort"></select>
+            </div>
+            <div class = "divider"></div>
+            <div id = "apps"></div>
+        </div>
+        <div id = "statsSection">
+            <div class = "sectionLabel">📈 Your Stats</div>
+            <div id = "statTypes"></div>
+            <div class = "divider"></div>
+            <div id = "statsHeader"></div>
+            <div id = "stats"></div>
+        </div>
+    </div>
+    
+    <script src = "header.js" type = "module"></script>
+    <script src = "dashboard.js" type = "module"></script>
+</body>
+</html>

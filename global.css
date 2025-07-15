@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body{
+    font-family: "Inter", sans-serif;
+}
+input{
+    font-family: "Inter", sans-serif;
+    transition:0.3s all;
+    padding-top:0;
+    padding-bottom:0;
+    border:1px solid rgb(225,225,225);
+}
+input:focus{
+    outline:none;
+    filter:brightness(97.5%);
+}
+textarea{
+    font-family: "Inter", sans-serif;
+    transition:0.3s all;
+    padding-top:0;
+    padding-bottom:0;
+    border:1px solid rgb(225,225,225);
+    resize: none;
+}
+textarea:focus{
+    outline:none;
+    filter:brightness(97.5%);
+}
+select{
+    border-radius:0.25vw;
+    border:1px solid rgb(225,225,225);
+    color:rgb(50,50,50);
+    font-family: "Inter", sans-serif;
+    text-align:left;
+    background:none;
+    cursor:pointer;
+    background: url('data:image/svg+xml;utf8,<svg fill="rgb(50,50,50)" height="12" viewBox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M8 10l4 4 4-4z"/></svg>') no-repeat right 0.25vw center;
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition:0.3s all;
+    background-color:white;
+}
+select:focus{
+    filter:brightness(97%);
+    outline:none;
+}
+button{
+    font-family: "Inter", sans-serif;
+    transition:0.3s filter, 0.1s background-color;
+    border:1px solid rgb(225,225,225);
+    border-radius:0.25vw;
+    background-color:white;
+    cursor:pointer;
+}
+button:hover{
+    filter:brightness(97.5%);
+}

@@ -1,0 +1,61 @@
+#signinContainer{
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+#signinSection{
+    width:20vw;
+    display:flex;
+    flex-wrap:wrap;
+    gap:2vw;
+}
+#signinLabel{
+    color:rgb(50,50,50);
+    font-size:2vw;
+    width:100%;
+}
+.signinInputContainer{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:0.5vw;
+}
+.signinInputLabel{
+    font-size:0.75vw;
+    color:rgb(50,50,50);
+}
+.signinInputBox{
+    width:100%;
+    font-size:0.8vw;
+    color:rgb(50,50,50);
+    border-radius:0.25vw;
+    padding-left:0.5vw;
+    height:2vw;
+    box-sizing: border-box;
+}
+#signinError{
+    font-size:0.8vw;
+    background-color:rgba(255,0,0,0.1);
+    color:rgb(103, 0, 0);
+    padding-left:0.5vw;
+    padding-top:0.5vw;
+    padding-bottom:0.5vw;
+    width:100%;
+    padding-right:1vw;
+    border-radius:0.25vw;
+}
+#signinButton{
+    padding-top:0.65vw;
+    padding-bottom:0.65vw;
+    font-size:0.8vw;
+    color:white;
+    width:100%;
+    background-color:rgb(50,50,50);
+    border:none;
+    margin-top:1vw;
+    transition:background-color 0.3s;
+    font-weight:450;
+}
+#signinButton:hover{
+    background-color:rgb(70,70,70);
+}
