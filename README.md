@@ -1,7 +1,7 @@
 # 💼 Workbit
 ⭐ A simple and easy way to manage all your job applications, and discover insights from statistical analysis to help you improve the next one.  
   
-🌐 Link: https://platinumblock.github.io/workbit/  
+🌐 Link: https://daniel-lief.github.io/workbit/  
   
 💻 Tech Stack:
 - Design: Figma
